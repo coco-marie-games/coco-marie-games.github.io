@@ -1,3 +1,103 @@
-.current {
-  color: green;
+$orc-pink: #a561a8;
+$orc-hair-green: #35823a;
+
+@font-face {
+    font-family: 'AlphaBeta';
+    src: url('fonts/AlphaBetaBRK.eot');
+    src: url('fonts/AlphaBetaBRK.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AlphaBetaBRK.woff2') format('woff2'),
+        url('fonts/AlphaBetaBRK.woff') format('woff'),
+        url('fonts/AlphaBetaBRK.ttf') format('truetype'),
+        url('fonts/AlphaBetaBRK.svg#AlphaBetaBRK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+  background-color: #181028;
+  font-family: Dosis;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0 0 0;
+
+  img {
+    display: inline-block;
+    height: 100px;
+  }
+
+  h1 {
+    display: inline-block;
+    font-family: AlphaBeta;
+    color: $orc-hair-green;
+    font-weight: normal;
+    font-size: 54px;
+    margin: 0;
+    padding: 0;
+
+
+    span {
+      color: $orc-pink;
+    }
+  }
+}
+
+div.devlog-list-container,
+div.devlog-post {
+  color: $orc-pink;
+  width: 90%;
+  max-width: 1000px;
+  margin: 80px auto;
+  font-size: 22px;
+
+  ul {
+    list-style-type: none;
+    text-indent: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    color: $orc-hair-green;
+    font-family: AlphaBeta;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-family: AlphaBeta;
+    font-weight: normal;
+    font-size: 35px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+
+    a {
+      color: $orc-pink;
+      text-decoration: none;
+    }
+  }
+
+  span.date {
+    font-size: 20px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+  p.list {
+    margin: 10px 0 60px 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    width: 400px;
+    margin: 0 auto;
+  }
 }

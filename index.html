@@ -3,4 +3,15 @@ layout: coming-soon
 title: coco marie games | devlog
 ---
 
-<img src="/assets/images/little-orc.png">
+<div class="devlog-list-container">
+  <h1>Development Log</h1>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <span class="date">{{ post.date | date: '%b %e, %Y' }}</span>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

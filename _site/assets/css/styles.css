@@ -1,3 +1,31 @@
-.current { color: green; }
+@font-face { font-family: 'AlphaBeta'; src: url("fonts/AlphaBetaBRK.eot"); src: url("fonts/AlphaBetaBRK.eot?#iefix") format("embedded-opentype"), url("fonts/AlphaBetaBRK.woff2") format("woff2"), url("fonts/AlphaBetaBRK.woff") format("woff"), url("fonts/AlphaBetaBRK.ttf") format("truetype"), url("fonts/AlphaBetaBRK.svg#AlphaBetaBRK") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
+
+html, body { background-color: #181028; font-family: Dosis; }
+
+header { text-align: center; padding: 30px 0 0 0; }
+
+header img { display: inline-block; height: 100px; }
+
+header h1 { display: inline-block; font-family: AlphaBeta; color: #35823a; font-weight: normal; font-size: 54px; margin: 0; padding: 0; }
+
+header h1 span { color: #a561a8; }
+
+div.devlog-list-container, div.devlog-post { color: #a561a8; width: 90%; max-width: 1000px; margin: 80px auto; font-size: 22px; }
+
+div.devlog-list-container ul, div.devlog-post ul { list-style-type: none; text-indent: none; padding: 0; margin: 0; }
+
+div.devlog-list-container h1, div.devlog-post h1 { color: #35823a; font-family: AlphaBeta; font-weight: normal; font-size: 40px; margin: 0 0 50px 0; padding: 0; }
+
+div.devlog-list-container h2, div.devlog-post h2 { font-family: AlphaBeta; font-weight: normal; font-size: 35px; display: inline-block; margin: 0 20px 0 0; }
+
+div.devlog-list-container h2 a, div.devlog-post h2 a { color: #a561a8; text-decoration: none; }
+
+div.devlog-list-container span.date, div.devlog-post span.date { font-size: 20px; }
+
+div.devlog-list-container p, div.devlog-post p { margin: 20px 0; }
+
+div.devlog-list-container p.list, div.devlog-post p.list { margin: 10px 0 60px 0; padding: 0; }
+
+@media screen and (max-width: 650px) { header { width: 400px; margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */
