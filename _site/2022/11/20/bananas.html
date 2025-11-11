@@ -6,6 +6,8 @@
     <title>Bananas</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/highlight-js/default.min.css">
+    <link rel="stylesheet" href="/assets/css/highlight-js/atom-one-dark-reasonable.min.css">
   </head>
   <body>
     <header>
@@ -19,17 +21,31 @@
   <h2>Bananas</h2>
   <span class="date">Nov 20, 2022</span>
 
-  <p>A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.</p>
+  <p>This is a technique I came up with to create a helpful effect for (3/4 perspective) top-down 2D games in Godot: making objects semi-transparent when the player character moves behind them. I’m making a little game with lots of tightly-grouped buildings and secrets hidden in alleyways, so I want the player to be able to clearly see their character no matter where they are in the environment. This is a common feature in games, so I’m sharing my take on it in case it helps any other Godot beginners, and because I’m tickled by how simple it is.</p>
 
-<p>In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.</p>
+<p>Here’s what the effect looks like:</p>
+
+<figure class="medium">
+  <img src="/assets/images/auto-transparency-godot-example.gif" alt="Auto transparency example in Godot" />
+  <figcaption>
+    The building becomes partly transparent when the player character moves behind it.
+  </figcaption>
+</figure>
+
+<p>And here’s what the scene structure looks like:</p>
+
+<figure class="medium">
+  <img src="/assets/images/godot-auto-transparency-example-scene-structure.png" alt="Auto transparency example in Godot scene structure" />
+  <figcaption>
+    A <code>StaticBody2D</code> with a <code>Sprite</code>, a <code>CollisionShape2D</code>, and an <code>Area2D</code> with its own <code>CollisionShape2D</code>.
+  </figcaption>
+</figure>
 
 </div>
 
 
   </body>
+  <script src="/assets/js/highlight.min.js"></script>
+  <script src="/assets/js/highlight-gdscript.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </html>

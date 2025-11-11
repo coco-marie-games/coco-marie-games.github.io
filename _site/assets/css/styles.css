@@ -26,6 +26,22 @@ div.devlog-list-container p, div.devlog-post p { margin: 20px 0; }
 
 div.devlog-list-container p.list, div.devlog-post p.list { margin: 10px 0 60px 0; padding: 0; }
 
+pre code { font-size: 18px; }
+
+code { font-size: 18px; background-color: #282c34; color: #abb2bf; padding: 2px 4px; }
+
+figure { margin: 20px auto; text-align: center; }
+
+figure figcaption { font-size: 18px; }
+
+figure figcaption code { font-size: 15px; }
+
+figure.small img { max-width: 250px; }
+
+figure.medium img { max-width: 500px; }
+
+figure.large img { max-width: none; }
+
 @media screen and (max-width: 650px) { header { width: 400px; margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */

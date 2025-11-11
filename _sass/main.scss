@@ -95,6 +95,47 @@ div.devlog-post {
   }
 }
 
+pre {
+  code {
+    font-size: 18px;
+  }
+}
+
+code {
+  font-size: 18px;
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 2px 4px;
+}
+
+figure {
+  margin: 20px auto;
+  text-align: center;
+
+  figcaption {
+    font-size: 18px;
+
+    code {
+      font-size: 15px;
+    }
+  }
+}
+figure.small {
+  img {
+    max-width: 250px;
+  }
+}
+figure.medium {
+  img {
+    max-width: 500px;
+  }
+}
+figure.large {
+  img {
+    max-width: none;
+  }
+}
+
 @media screen and (max-width: 650px) {
   header {
     width: 400px;
